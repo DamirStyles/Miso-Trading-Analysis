@@ -229,8 +229,3 @@ MISO_Trading_Analysis/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-```
-
----
-
-2025 is one year of out-of-sample data. Enough to validate the approach, not enough to draw conclusions across all market regimes.
