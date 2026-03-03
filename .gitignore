@@ -1,0 +1,39 @@
+# ── API Keys & Secrets ────────────────────────────────────────────────────────
+.env
+
+# ── Database ──────────────────────────────────────────────────────────────────
+database/
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Trained Model Artifacts ───────────────────────────────────────────────────
+outputs/*.pth
+outputs/*.pkl
+
+# ── Data Files (proprietary / too large for git) ─────────────────────────────
+data/
+*.csv
+*.xlsx
+*.parquet
+
+# ── Jupyter Notebook Checkpoints ─────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ── Python Cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ── OS Junk ───────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── VS Code / IDE ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
