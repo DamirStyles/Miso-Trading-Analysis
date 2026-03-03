@@ -172,7 +172,7 @@ Model and scalers loaded. Running inference at 2026-03-01 09:45
 ## Setup
 
 ```bash
-git clone https://github.com/yourusername/MISO_Trading_Analysis.git
+git clone https://github.com/DamirStyles/Miso-Trading-Analysis.git
 cd MISO_Trading_Analysis
 pip install -r requirements.txt
 ```
@@ -186,14 +186,14 @@ EIA_KEY=your_key_here
 
 Run ETL scripts in order:
 ```bash
-python scripts/01_initialize_db.py
-python scripts/02_fetch_da_prices.py
-python scripts/03_fetch_rt_prices.py
-python scripts/04_fetch_load_forecast.py
-python scripts/05_fetch_wind_forecast.py
-python scripts/06_load_weather_forecast.py
-python scripts/07_load_gas_prices.py
-python scripts/08_load_outages.py
+python scripts/01_load_lmp.py
+python scripts/02_load_weather_actual.py
+python scripts/03_load_weather_forecast.py
+python scripts/04_load_gas_prices.py
+python scripts/05_load_load_data.py
+python scripts/06_load_outages.py
+python scripts/07_load_wind.py
+python scripts/08_load_transmission.py
 python scripts/09_build_features.py
 ```
 
@@ -210,14 +210,14 @@ python inference.py
 ```
 MISO_Trading_Analysis/
 ├── scripts/
-│   ├── 01_initialize_db.py
-│   ├── 02_fetch_da_prices.py
-│   ├── 03_fetch_rt_prices.py
-│   ├── 04_fetch_load_forecast.py
-│   ├── 05_fetch_wind_forecast.py
-│   ├── 06_load_weather_forecast.py
-│   ├── 07_load_gas_prices.py
-│   ├── 08_load_outages.py
+│   ├── 01_load_lmp.py
+│   ├── 02_load_weather_actual.py
+│   ├── 03_load_weather_forecast.py
+│   ├── 04_load_gas_prices.py
+│   ├── 05_load_load_data.py
+│   ├── 06_load_outages.py
+│   ├── 07_load_wind.py
+│   ├── 08_load_transmission.py
 │   └── 09_build_features.py
 ├── notebooks/
 │   └── lstm_spread_model.ipynb
